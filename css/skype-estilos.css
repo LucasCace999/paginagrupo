@@ -22,7 +22,7 @@ body{
 
 .header{
     height: 100vh;
-    background-image: linear-gradient(to top, rgba(168, 95, 148, 0.452) 0%, hsla(218, 37%, 54%, 0.514) 100%), url(/img/portada-skype.png);
+    background-image: linear-gradient(to top, rgba(168, 95, 148, 0.452) 0%, hsla(218, 37%, 54%, 0.514) 100%), url(../img/portada-skype.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
