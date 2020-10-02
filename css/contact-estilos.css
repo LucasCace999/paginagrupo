@@ -22,7 +22,7 @@ body{
 
 .header{
     height: 100vh;
-    background-image: linear-gradient(to top, #a18cd188 0%, #fbc2eb86 100%) , url(../img/portada.jpg);
+    background-image: linear-gradient(to top, rgba(168, 95, 148, 0.452) 0%, hsla(218, 37%, 54%, 0.514) 100%), url(../img/portada-contacto.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -61,9 +61,9 @@ body{
     height: 100%;
     /* background-image: linear-gradient(to top, #fbc2eb 0%, #a6c0ee 100%); */
     /* 02 */
-    background-image: linear-gradient(to top, #a18cd1 0%, #fbc2eb 100%);
+    background-image: radial-gradient(circle 248px at center, #16d9e3 0%, #30c7ec 47%, #46aef7 100%);
     /* 028 */
-    background-image: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background-image: radial-gradient(circle 248px at center, #16d9e371 0%, #30c7ec 47%, #46adf791 100%);
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -91,118 +91,73 @@ body{
     font-weight: bold;
 }
 
-.number{
-    display: inline-block;
-    /* 02 */
-    background-image: linear-gradient(to top, #a18cd1 0%, #fbc2eb 100%);
-    line-height: 30px;
+.title{
     text-align: center;
-    border-radius: 50%;
-    margin-right: 5px;
-    width: 30px;
-    height: 30px;
-    color: #fff;
-    font-weight: 700;
+    margin: 30px;
 }
 
-.subtitulo{
-    color: #9f8ad0;
-    font-size: 25px;
-    text-align: center;
-    font-weight: 300;
-    margin-bottom: 20px;
-    font-weight: bold;
-}
-
-/* introduction */
-.introduction{
-    width: 90%;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    margin: auto;
-    margin-top: 30px;
-    margin-bottom: 30px;
-}
-
-.introduction p{
-    width: 70%;
-    margin: auto;
-    font-weight: lighter;
-    margin-bottom: 10px;
-}
-
-.intro-title{
-    text-align: center;
-    margin: 10px;
-}
-
-.introduction img{
-    width: 100%;
-    max-width: 300px;
-    margin: auto;
-    margin-bottom: 20px;
-}
-
-/* Contenido */
-/* Cards */
-.card a{
-    text-decoration: none;
-    color: rgb(56, 51, 51);
+main{
     text-align: center;
 }
 
-
-
-/* CARDS POSITION */
-.background1{
-    background-color: rgb(245, 245, 245);
-    padding-top: 50px;
-    padding-bottom: 50px;
+.title{
+    color: #764ba2;
 }
-.container{
-    display: flex;
-    justify-content: center;
-}
+
+/* cards */
+
 .card{
+    width: 180px;
+    height: 260px;
+    border: 2px;
+    padding: 7px;
+    font-size: 14px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 5px;
+    color: rgb(0, 0, 0);
+    margin: auto;
+    margin-bottom: 30px;
+    -webkit-box-shadow: 0px 0px 7px 1px rgba(0,0,0,0.65);
+-moz-box-shadow: 0px 0px 7px 1px rgba(0,0,0,0.65);
+box-shadow: 0px 0px 7px 1px rgba(0,0,0,0.65);
+
+}
+
+.cards{
     display: flex;
-    height: 150px;
-    width: 150px;
-    flex-direction: column;
-    align-items: center;
-    margin: 0 25px;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    -webkit-box-shadow: 0px 0px 9px -1px rgba(0,0,0,0.53);
-    -moz-box-shadow: 0px 0px 9px -1px rgba(0,0,0,0.53);
-    box-shadow: 0px 0px 9px -1px rgba(0,0,0,0.53);
-    border: 1px solid;
-    border-radius: 15px;
-    border-color: rgba(0, 0, 0, 0.226);
+    width: 90%;
+    justify-content: space-around;
+    margin: auto;
+}
+
+.button{
     padding: 10px;
+    border: 1px solid;
+    margin: 5px;
+    border-radius: 5px;
 }
 
-.card:hover {
-    background-color: #a76bcf;
-    border-color: #a76bcf;
-    transition: 300ms;
+a{
+    text-decoration: none;
+}
+
+.ig:hover{
+    background:linear-gradient(45deg, #405de6, #5851db, #833ab4, #c13584, #e1306c, #fd1d1d);
     color: white;
 }
 
-.card:hover a{
+.fb:hover{
+    background-color: #4267B2;
     color: white;
 }
 
-
-
-
-.card img{
-    height: 64px;
-    width: 64px;
-    margin: 15px;
+.wa:hover{
+    background-color: #25d366;
+    color: white;
 }
 
-/* Footer */
+/* footer */
+
 footer{
     background: #9f8ad0;
     padding-bottom: 10px;
@@ -274,12 +229,16 @@ footer{
         grid-template-columns: repeat(2, 2fr);
         width: 95%;
         margin: auto;
-        
+    }
+    .cards{
+        display: flex;
+        flex-direction: column;
     }
     .card{
         margin: 25px;
         margin: auto;
         margin-bottom: 20px;
+        width: 80%;
     }
 
     .footer-content{
@@ -303,21 +262,5 @@ footer{
 
     .contact-us p{
         text-align: center;
-    }
-}
-
-@media screen and (max-width: 600px){
-    .card{
-        width: 100px;
-        height: 100px;
-        align-items: center;
-    }
-    .card img{
-        height: 50px;
-        padding-bottom: 10px;
-    }
-
-    .card h3{
-        font-size: 12px;
     }
 }

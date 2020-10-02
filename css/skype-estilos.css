@@ -115,6 +115,25 @@ li{
     margin-bottom: 10px;
 }
 
+p{
+    margin-bottom: 10px;
+}
+
+span{
+    color: #2e9ffb;
+}
+
+a{
+    text-decoration: none;
+}
+
+.skype1{
+    width: 250px;
+    margin: auto;
+
+}
+
+
 /* Footer */
 footer{
     background: #2e9ffb;

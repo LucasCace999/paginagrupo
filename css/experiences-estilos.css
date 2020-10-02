@@ -17,16 +17,24 @@ body{
     max-width: 1200px;
     overflow: hidden;
     margin: auto;
-    padding: 60px 0;
+    padding: 30px 0;
+}
+
+body{
+    background-image: linear-gradient(315deg, #b4becc 0%, #d4c3c6 74%);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
 }
 
 .header{
     height: 100vh;
-    background-image: linear-gradient(to top, #a18cd188 0%, #fbc2eb86 100%) , url(../img/portada.jpg);
+    background-image:url(../img/portada-experiencias.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    /* background-attachment: fixed; */
+    background-attachment: fixed;
     
 }
 
@@ -35,10 +43,13 @@ body{
     height: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     text-align: center;
+    justify-content: center;
     color: #fff;
-    
+}
+
+.blur{
+    margin-top: 30px;
 }
 
 
@@ -91,118 +102,103 @@ body{
     font-weight: bold;
 }
 
-.number{
-    display: inline-block;
-    /* 02 */
-    background-image: linear-gradient(to top, #a18cd1 0%, #fbc2eb 100%);
-    line-height: 30px;
+.title{
+    color:  #101357;
     text-align: center;
-    border-radius: 50%;
-    margin-right: 5px;
-    width: 30px;
-    height: 30px;
-    color: #fff;
-    font-weight: 700;
-}
-
-.subtitulo{
-    color: #9f8ad0;
-    font-size: 25px;
-    text-align: center;
-    font-weight: 300;
-    margin-bottom: 20px;
+    margin: 30px 0;
     font-weight: bold;
+    font-size: 24px;
 }
 
-/* introduction */
-.introduction{
-    width: 90%;
+.videoconferencia{
     display: flex;
-    justify-content: center;
-    flex-direction: column;
-    margin: auto;
-    margin-top: 30px;
-    margin-bottom: 30px;
 }
 
-.introduction p{
-    width: 70%;
-    margin: auto;
-    font-weight: lighter;
-    margin-bottom: 10px;
-}
-
-.intro-title{
-    text-align: center;
-    margin: 10px;
-}
-
-.introduction img{
-    width: 100%;
-    max-width: 300px;
-    margin: auto;
-    margin-bottom: 20px;
-}
-
-/* Contenido */
-/* Cards */
-.card a{
-    text-decoration: none;
-    color: rgb(56, 51, 51);
-    text-align: center;
-}
-
-
-
-/* CARDS POSITION */
-.background1{
-    background-color: rgb(245, 245, 245);
-    padding-top: 50px;
-    padding-bottom: 50px;
-}
-.container{
+.edmodo{
     display: flex;
-    justify-content: center;
 }
+
+.teams{
+    display: flex;
+}
+
+.classroom{
+    display: flex;
+}
+
+.moodle{
+    display: flex;
+}
+
+.moodle .card{
+    width: 300px;
+}
+
+.classroom .card{
+    width: 300px;
+    height: auto;
+}
+
+/* cards */
+
+.videoconferencia .card{
+    height: auto;
+    width: 230px;
+    margin: auto;
+}
+
+.edmodo .card{
+    height: auto;
+    width: 230px;
+    margin: auto;
+}
+
 .card{
-    display: flex;
-    height: 150px;
-    width: 150px;
-    flex-direction: column;
-    align-items: center;
-    margin: 0 25px;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    -webkit-box-shadow: 0px 0px 9px -1px rgba(0,0,0,0.53);
-    -moz-box-shadow: 0px 0px 9px -1px rgba(0,0,0,0.53);
-    box-shadow: 0px 0px 9px -1px rgba(0,0,0,0.53);
-    border: 1px solid;
-    border-radius: 15px;
-    border-color: rgba(0, 0, 0, 0.226);
-    padding: 10px;
+    width: 210px;
+    height: 260px;
+    border: 2px;
+    padding: 7px;
+    font-size: 14px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 5px;
+    color: rgb(0, 0, 0);
+    margin: auto;
+    margin-bottom: 30px;
+    -webkit-box-shadow: 0px 0px 7px 1px rgba(0,0,0,0.65);
+-moz-box-shadow: 0px 0px 7px 1px rgba(0,0,0,0.65);
+box-shadow: 0px 0px 7px 1px rgba(0,0,0,0.65);
 }
 
-.card:hover {
-    background-color: #a76bcf;
-    border-color: #a76bcf;
-    transition: 300ms;
-    color: white;
+.card h3{
+    color: #101357;
+    text-align: center;
+    padding: 5px;
+    font-weight: bold;
+    font-size: 24px;
+    text-transform: uppercase;
+    border-bottom: 1px solid;
+    
 }
 
-.card:hover a{
-    color: white;
+.card h4{
+    padding: 5px;
+}
+
+.card p{
+    margin: 10px;
+    font-size: 12px;
+}
+
+.name{
+    text-align: center;
+    font-style: italic;
 }
 
 
 
 
-.card img{
-    height: 64px;
-    width: 64px;
-    margin: 15px;
-}
+/* footer */
 
-/* Footer */
 footer{
     background: #9f8ad0;
     padding-bottom: 10px;
@@ -268,19 +264,64 @@ footer{
     color:#764ba2;
 }
 
-@media screen and (max-width: 800px){
-    .container{
+@media screen and (max-width:800px){
+    .videoconferencia{
         display: grid;
-        grid-template-columns: repeat(2, 2fr);
-        width: 95%;
+        width: 90%;
         margin: auto;
-        
     }
-    .card{
-        margin: 25px;
-        margin: auto;
+
+    .videoconferencia .card{
+        width: auto;
         margin-bottom: 20px;
     }
+
+    .edmodo{
+        display: grid;
+        width: 90%;
+        margin: auto;
+    }
+
+    .edmodo .card{
+        width: auto;
+        margin-bottom: 20px;
+    }
+
+    .teams{
+        display: grid;
+        width: 90%;
+        margin: auto;
+    }
+
+    .teams .card{
+        width: auto;
+        height: auto;
+        margin-bottom: 20px;
+    }
+
+    .classroom{
+        display: grid;
+        width: 90%;
+        margin: auto;
+    }
+
+    .classroom .card{
+        width: auto;
+        margin-bottom: 20px;
+    }
+
+    .moodle{
+        display: grid;
+        width: 90%;
+        margin: auto;
+    }
+
+    .moodle .card{
+        width: auto;
+        height: auto;
+        margin-bottom: 20px;
+    }
+
 
     .footer-content{
         justify-content: center;
@@ -308,16 +349,12 @@ footer{
 
 @media screen and (max-width: 600px){
     .card{
-        width: 100px;
-        height: 100px;
-        align-items: center;
-    }
-    .card img{
-        height: 50px;
-        padding-bottom: 10px;
+        height: 250px;
+        font-size: 12px;
     }
 
     .card h3{
-        font-size: 12px;
+        font-size: 15px;
     }
+    
 }
