@@ -94,6 +94,12 @@ body{
     text-decoration: none;
 }
 
+.blur{
+    color: black;
+    padding: 30px;
+    backdrop-filter: blur(2px);
+}
+
 .head .titulo{
     font-weight: bolder;
 }
@@ -110,59 +116,42 @@ body{
     font-size: 24px;
 }
 
-.videoconferencia{
-    display: flex;
+.zoom{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+    
+}
+.duo{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+}
+.skype{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+.meet{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
 }
 
-.edmodo{
-    display: flex;
-}
 
-.teams{
-    display: flex;
-}
-
-.classroom{
-    display: flex;
-}
-
-.moodle{
-    display: flex;
-}
-
-.moodle .card{
-    width: 300px;
-}
-
-.classroom .card{
-    width: 300px;
-    height: auto;
-}
 
 /* cards */
 
-.videoconferencia .card{
-    height: auto;
-    width: 230px;
-    margin: auto;
-}
 
-.edmodo .card{
-    height: auto;
-    width: 230px;
-    margin: auto;
-}
 
 .card{
-    width: 210px;
-    height: 260px;
+
     border: 2px;
     padding: 7px;
     font-size: 14px;
     background-color: rgb(255, 255, 255);
     border-radius: 5px;
     color: rgb(0, 0, 0);
-    margin: auto;
     margin-bottom: 30px;
     -webkit-box-shadow: 0px 0px 7px 1px rgba(0,0,0,0.65);
 -moz-box-shadow: 0px 0px 7px 1px rgba(0,0,0,0.65);
@@ -265,62 +254,45 @@ footer{
 }
 
 @media screen and (max-width:800px){
-    .videoconferencia{
-        display: grid;
-        width: 90%;
-        margin: auto;
+    .zoom{
+        grid-template-columns: 1fr;
+        
     }
-
-    .videoconferencia .card{
-        width: auto;
-        margin-bottom: 20px;
-    }
-
-    .edmodo{
-        display: grid;
-        width: 90%;
-        margin: auto;
-    }
-
-    .edmodo .card{
-        width: auto;
-        margin-bottom: 20px;
-    }
-
-    .teams{
-        display: grid;
-        width: 90%;
-        margin: auto;
-    }
-
-    .teams .card{
+    .zoom .card{
         width: auto;
         height: auto;
-        margin-bottom: 20px;
     }
 
-    .classroom{
-        display: grid;
-        width: 90%;
-        margin: auto;
+    .duo{
+        grid-template-columns: 1fr;
+        
     }
-
-    .classroom .card{
-        width: auto;
-        margin-bottom: 20px;
-    }
-
-    .moodle{
-        display: grid;
-        width: 90%;
-        margin: auto;
-    }
-
-    .moodle .card{
+    .duo .card{
         width: auto;
         height: auto;
-        margin-bottom: 20px;
     }
+
+    .skype{
+        grid-template-columns: 1fr;
+        
+    }
+    .skype .card{
+        width: auto;
+        height: auto;
+    }
+
+    .meet{
+        grid-template-columns: 1fr;
+        
+    }
+    .meet .card{
+        width: auto;
+        height: auto;
+    }
+    
+    
+
+    
 
 
     .footer-content{

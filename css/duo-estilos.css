@@ -91,6 +91,8 @@ body{
     font-weight: bold;
 }
 
+ 
+
 /* titulos */
 .contenedor h3{
     color: #1b3b90;
@@ -110,12 +112,28 @@ body{
     text-align: center;
     margin: 20px;
     font-size: 40px;
-    
 }
 
 
 li{
     margin-bottom: 10px;
+}
+
+.contenedor img{
+    margin: auto;
+    width: 100%;
+    max-width: 400px;
+}
+
+.como-usar p{
+    border: 1px;
+    background-color:  #1b3b90;
+    color: white;
+    border-radius: 10px;
+    padding: 5px;
+    text-align: center;
+    margin-bottom: 12px;
+    font-size: 12px;
 }
 
 /* Footer */
@@ -182,6 +200,44 @@ footer{
 .social-media-icon:hover{
     background: #fff;
     color:#1b3b90;
+}
+
+.ventajas-desventajas{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    font-size: 12px;
+    gap: 2rem;
+}
+
+.ventajas{
+    background-color: rgb(233, 233, 233);
+    padding: 15px;
+    border: 1px;
+    border-radius: 10px;
+}
+
+.desventajas{
+    background-color: rgb(233, 233, 233);
+    padding: 15px;
+    border: 1px;
+    border-radius: 10px;
+}
+
+.ventajas .desventajas{
+    border: 1px;
+}
+
+#ventajas{
+    color: rgb(126, 161, 54);
+}
+
+#desventajas{
+    color: rgb(161, 54, 54);
+}
+
+#duo1{
+    float: left;
+    margin: 20px;
 }
 
 @media screen and (max-width: 800px){

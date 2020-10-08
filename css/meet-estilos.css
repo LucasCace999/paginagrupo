@@ -97,6 +97,10 @@ body{
     margin-top: 40px;
 }
 
+.contenedor p{
+    font-size: 12px;
+}
+
 h4{
     color: #08897c;
     text-align: center;
@@ -121,6 +125,7 @@ p{
 
 li{
     margin-bottom: 10px;
+    font-size: 12px;
 }
 
 span{
@@ -194,6 +199,77 @@ footer{
     color:#08897c;
 }
 
+#meet1{
+    max-width: 350px;
+    margin: auto;
+    float: left;
+    margin: 13px;
+}
+
+#meet2{
+    max-width: 500px;
+    display: flex;
+    margin: auto;
+}
+
+#meet3{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.caracteristicas{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+}
+
+.ventajas{
+    background-color: rgb(240, 240, 240);
+    padding: 10px;
+    padding-top: 0;
+    border-radius: 10px;
+}
+
+.desventajas h3{
+    color: #892208;
+}
+
+.desventajas{
+    background-color: rgb(240, 240, 240);
+    padding: 10px;
+    padding-top: 0;
+    border-radius: 10px;
+}
+
+
+.ventajas-desventajas{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    font-size: 12px;
+    gap: 1rem;
+}
+
+.ventajas-desventajas p{
+    font-size: 10px;
+}
+
+.diferencias{
+    width: 70%;
+}
+
+.bg{
+    background-color: rgb(245, 245, 245);
+}
+
+.requisitos{
+    width: 70%;
+}
+
 @media screen and (max-width: 800px){
     .footer-content{
         justify-content: center;
@@ -216,5 +292,25 @@ footer{
 
     .contact-us p{
         text-align: center;
+    }
+
+    #video{
+        width: 100%;
+        max-width: 400px;
+        margin: auto;
+    }
+
+    #meet2{
+        width: 100%;
+        display: flex;
+        margin: auto;
+    }
+
+    .caracteristicas{
+        grid-template-columns: 1fr;
+    }
+
+    .ventajas-desventajas{
+        grid-template-columns: 1fr;
     }
 }

@@ -202,6 +202,38 @@ body{
     margin: 15px;
 }
 
+/* experiencias */
+.experiences{
+    padding: 50px;
+    width: 80%;
+    display: flex;
+    margin: auto;
+    flex-direction: column;
+}
+
+.btn{
+    margin: auto;
+    width: 300px;
+    text-align: center;
+    border: 2px solid;
+    padding: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    border-color: #a76bcf;
+}
+
+.btn:hover{
+    background-color: #a76bcf;
+    color: white;
+    transition: 500ms;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
 /* Footer */
 footer{
     background: #9f8ad0;
@@ -303,6 +335,13 @@ footer{
 
     .contact-us p{
         text-align: center;
+    }
+
+    .experiences{
+        width: 90%;
+    }
+    .btn{
+
     }
 }
 
