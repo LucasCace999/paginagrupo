@@ -9,7 +9,7 @@
 }
 
 body{
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
 
 .contenedor{
@@ -63,7 +63,7 @@ body{
     /* 02 */
     background-image: radial-gradient(circle 248px at center, #16d9e3 0%, #30c7ec 47%, #46aef7 100%);
     /* 028 */
-    background-image: radial-gradient(circle 248px at center, #16d9e371 0%, #30c7ec 47%, #46adf791 100%);
+    background-image: radial-gradient(circle 248px at center, #16d9e3 0%, #30c6ec 47%, #46adf7 100%);
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;

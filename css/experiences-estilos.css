@@ -9,7 +9,7 @@
 }
 
 body{
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
 
 .contenedor{
@@ -48,9 +48,7 @@ body{
     color: #fff;
 }
 
-.blur{
-    margin-top: 30px;
-}
+
 
 
 .hamburguer{
@@ -97,7 +95,7 @@ body{
 .blur{
     color: black;
     padding: 30px;
-    backdrop-filter: blur(2px);
+    /* backdrop-filter: blur(2px); */
 }
 
 .head .titulo{

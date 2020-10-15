@@ -9,7 +9,7 @@
 }
 
 body{
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
 
 .contenedor{
@@ -23,7 +23,7 @@ body{
 
 .header{
     height: 100vh;
-    background-image: linear-gradient(to top, rgba(168, 95, 148, 0.452) 0%, hsla(218, 37%, 54%, 0.514) 100%), url(../img/portada-skype.png);
+    background-image: linear-gradient(to top, rgba(168, 95, 148, 0.452) 0%, hsla(218, 37%, 54%, 0.514) 100%), url(../img/portada-skype.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -62,9 +62,9 @@ body{
     height: 100%;
     /* background-image: linear-gradient(to top, #fbc2eb 0%, #a6c0ee 100%); */
     /* 02 */
-    background-image: radial-gradient(circle 248px at center, #16d9e3 0%, #30c7ec 47%, #46aef7 100%);
+    background-image: radial-gradient(circle 248px at center, #16d9e3 0%, #30c7ec 47%, #28a1f6 100%);
     /* 028 */
-    background-image: radial-gradient(circle 248px at center, #16d9e371 0%, #30c7ec 47%, #46adf791 100%);
+    background-image: radial-gradient(circle 248px at center, #16d9e3 0%, #30c7ec 47%, #46adf7 100%);
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -195,7 +195,9 @@ a{
 
 .skype1{
     width: 250px;
+    display: flex;
     margin: auto;
+    margin-bottom: 20px;
 
 }
 
